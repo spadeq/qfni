@@ -14,7 +14,7 @@
    <string>qfni</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btn_load_dir">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -27,7 +27,7 @@
      <string>Load from directory</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="btn_load_file">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -53,11 +53,11 @@
      <enum>QTabWidget::West</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Tab 1</string>
+      <string>Info</string>
      </attribute>
      <widget class="QPushButton" name="pushButton_3">
       <property name="geometry">
@@ -75,7 +75,7 @@
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>Scan</string>
      </attribute>
      <widget class="QTextEdit" name="textEdit">
       <property name="geometry">
@@ -87,6 +87,11 @@
        </rect>
       </property>
      </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Labeling</string>
+     </attribute>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox">
@@ -107,7 +112,7 @@
     <property name="checkable">
      <bool>false</bool>
     </property>
-    <widget class="QGraphicsView" name="graphicsView">
+    <widget class="QGraphicsView" name="gv_preview">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -164,7 +169,7 @@
       <rect>
        <x>10</x>
        <y>290</y>
-       <width>160</width>
+       <width>251</width>
        <height>16</height>
       </rect>
      </property>
